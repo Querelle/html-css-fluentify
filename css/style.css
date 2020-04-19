@@ -80,9 +80,6 @@
   right: -300px;
   width: 80%;
 }
-
-/* FINE HEADER */
-
 .head-wrapper .centratore .testo-immagine {
   width: 550px;
   position: absolute;
@@ -102,4 +99,51 @@
   width: 180px;
   padding: 12px 10px;
   background-color: #7fb802;
+}
+/* FINE HEADER */
+.oriz-banner {
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 22px;
+  padding: 40px;
+}
+.oriz-banner .grassetto {
+  font-weight: bold;
+  color: #553a3c;
+}
+.oriz-banner .semplice {
+  color: #9c9c9c;
+}
+main .centratore {
+  width: 65%;
+  margin: auto;
+  border: red 1px solid;
+}
+main .centratore > div {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+main .centratore .tutor {
+  margin: 0px 5%;
+}
+main .centratore .titolo {
+  height: 50px;
+}
+main .centratore hr {
+  width: 20%;
+  margin: 20px auto;
+
+}
+main .centratore .img {
+  height: 150px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+main .centratore::after {
+  content: "";
+  display: table;
+  clear: both;
 }
