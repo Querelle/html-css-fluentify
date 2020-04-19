@@ -8,40 +8,66 @@
 /* FINE RESET */
 
 /* REGOLE GENERALI */
-.head-wrapper {
+.testata, .corpo {
+  font-family: 'Baloo Bhai 2', cursive;
+  color: #9c9c9c;
+}
+.testata {
   background-color: #0d325a;
   color: #FFF;
-  font-family: 'Baloo Bhai 2', cursive;
 }
-.head-wrapper .centratore.uno {
-  position: relative;
+.centratore {
   width: 65%;
   margin: auto;
+}
+.titolo, .grassetto {
+  font-weight: bold;
+}
+/* FINE REGOLE GENERALI */
+/* HELP contact */
+.help {
+  position: fixed;
+  bottom: 0px;
+  right: 10%;
+  height: 30px;
+  padding: 5px;
+  padding-bottom: 30px;
+  border-radius: 9% 9% 0 0;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 17px;
+  color: #FFFFFF;
+  background-color: #7fb802;
+}
+/* HEADER */
+.menu, .login {
+  font-size: 12px;
+}
+.testata .centratore.uno {
+  position: relative;
   height: 470px;
   padding-top: 1%;
 }
-/* FINE REGOLE GENERALI */
-
-/* HEADER */
-.head-wrapper .centratore .menu {
+.testata .centratore.uno .menu {
   position: absolute;
   float: left;
-  padding-left: 1%;
+  padding-left: 2%;
 }
-.head-wrapper .centratore .menu .logo {
-  display: inline-block;
+.testata .centratore.uno .menu::after{
+  content: ""
+  display: table;
+  clear: both;
 }
-.head-wrapper .centratore .menu .logo img {
+.testata .centratore.uno .menu .logo {
   align: left;
   width: 100px;
+  display: inline-block;
 }
-.head-wrapper .centratore .menu .lista-menu {
-  font-size: 12px;
+.testata .centratore.uno .menu .lista-menu {
   padding-left: 24px;
   display: inline;
   list-style-type: none;
 }
-.head-wrapper .centratore .menu .lista-menu li {
+.testata .centratore.uno .menu .lista-menu li {
   display: inline;
   position: relative;
   top: -7px;
@@ -49,48 +75,34 @@
   padding-left: 10px;
   font-weight: bold;
 }
-.head-wrapper .centratore .login {
-  font-size: 12px;
-  font-weight: bold;
+.testata .centratore.uno .login {
   text-transform: uppercase;
   line-height: 43px;
   text-align: right;
 }
-.head-wrapper .centratore .login > span {
+.testata .centratore.uno .login > span {
   margin-left: 8px;
-}
-.head-wrapper .centratore .login .button{
-  border: solid 1px #4783ad;
   border-radius: 5px;
+  font-weight: bold;
+}
+.testata .centratore.uno .login .button{
+  border: solid 1px #4783ad;
   padding: 6px 15px;
 }
-.head-wrapper .centratore .login .cta {
-  border-radius: 5px;
+.testata .centratore.uno .login .cta {
   padding: 6px 15px;
   background-color: #7fb802;
 }
-.head-wrapper .centratore .menu-wrapper::after{
-  content: ""
-  display: table;
-  clear: both;
-}
-.head-wrapper .centratore .img-sfondo {
-  position: absolute;
-  bottom: 0px;
-  right: -400px;
-  width: 75%;
-}
-.head-wrapper .centratore .scegli {
+.testata .centratore.uno .scegli {
   width: 550px;
   position: absolute;
   bottom: 20%;
 }
-
-.head-wrapper .centratore .scegli .text {
+.testata .centratore.uno .scegli .text {
   font-weight: bold;
   font-size: 43px;
 }
-.head-wrapper .centratore .scegli .cta {
+.testata .centratore.uno .scegli .cta {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -100,90 +112,91 @@
   padding: 12px 10px;
   background-color: #7fb802;
 }
+.testata .centratore.uno .img-sfondo {
+  position: absolute;
+  bottom: 0px;
+  right: -300px;
+  width: 75%;
+}
 /* FINE HEADER */
-.oriz-banner {
+/* CORPO */
+/* strip oriziontale */
+
+/* CORPO */
+/* strip orizontale */
+.strip {
   text-align: center;
   background-color: #f9f9f9;
-  font-family: 'Baloo Bhai 2', cursive;
   font-size: 22px;
   padding: 40px;
 }
-.oriz-banner .grassetto {
-  font-weight: bold;
+.strip .grassetto {
   color: #553a3c;
 }
-.oriz-banner .semplice {
-  color: #9c9c9c;
-}
-main .centratore {
-  width: 65%;
-  margin: auto;
-}
-main .centratore.due > div {
+
+
+/* secondo blocco centrato */
+.corpo .centratore.due > div {
   float: left;
   width: 30%;
   text-align: center;
-  font-family: 'Baloo Bhai 2', cursive;
   color: #9c9c9c;
-
 }
-main .centratore .tutor {
+.corpo .centratore.due .tutor {
   margin: 0px 5%;
 }
-main .centratore .titolo {
+.corpo .centratore.due .titolo {
   height: 55px;
   color: #7fb802;
-  font-weight: bold;
   font-size: 20px;
 }
-main .centratore hr {
-  width: 20%;
+.corpo .centratore.due hr {
+  width: 10%;
   margin: 20px auto;
-
-
+  border: solid #d8d8d8 1px;
 }
-main .centratore.due .img {
+.corpo .centratore.due .img {
   height: 150px;
   margin-top: 25px;
   margin-bottom: 50px;
 }
-
-main .centratore::after {
+.corpo .centratore.due::after {
   content: "";
   display: table;
   clear: both;
 }
-main .divisore {
-  width: 98%;
-  color: #e5e5e5;
-  border-top: 1px;
-  margin: 70px auto;
 
+/* divisore */
+.corpo .divisore {
+  width: 98%;
+  margin: 70px auto;
+  border-top: 1px;
+  color: #e5e5e5;
 }
-main .centratore.tre{
+
+/* terzo blocco centrato */
+.corpo .centratore.tre{
   position: relative;
   text-align: center;
 }
-
-main .centratore.tre .livello {
+.corpo .centratore.tre .img-livello {
+  float: left;
+  height: 350px;
+  margin-left: 50px;
+}
+.corpo .centratore.tre .livello {
   position: absolute;
   top: 80px;
   right: 100px;
   width: 30%;
   text-align: left;
-  font-family: 'Baloo Bhai 2', cursive;
 }
-
-main .centratore.tre .livello .titolo {
-  margin-bottom: 100px;
+.corpo .centratore.tre .livello .titolo {
+  margin-bottom: 30px;
   color: #4a4a4a;
   font-size: 25px;
 }
-main .centratore .img-livello {
-  height: 350px;
-  float: left;
-  margin-left: 50px;
-}
-main .centratore.tre a{
+.corpo .centratore.tre .livello a{
   color: #9bc8f8;
 }
+/* FINE CORPO */
